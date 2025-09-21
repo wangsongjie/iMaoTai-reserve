@@ -54,7 +54,7 @@ if __name__ == '__main__':
         process.init_headers()
         location_select: dict = get_location()
         province = location_select['province']
-        city = location_select['city']
+        city = location_sel1ect['city']
         location: str = location_select['location']
 
         mobile = input("输入手机号[13812341234]:").strip()
