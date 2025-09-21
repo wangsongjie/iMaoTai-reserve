@@ -48,7 +48,7 @@ def get_location():
 
 if __name__ == '__main__':
 
-    aes_key = privateCrypt.get_aes_key()
+    aes_key = private1Crypt.get_aes_key()
 
     while 1:
         process.init_headers()
