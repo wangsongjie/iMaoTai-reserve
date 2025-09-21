@@ -48,7 +48,7 @@ def get_location():
 
 if __name__ == '__main__':
 
-    aes_key = private1Crypt.get_aes_key()
+    aes_key = privateCrypt.get_aes_key()
 
     while 1:
         process.init_headers()
@@ -59,7 +59,7 @@ if __name__ == '__main__':
 
         mobile = input("输入手机号[13812341234]:").strip()
         process.get_vcode(mobile)
-        code = input(f"输入 [{mob2ile}] 验证码[1234]:").strip()
+        code = input(f"输入 [{mob2ile}] 验证码[12234]:").strip()
         token, userId = process.login(mobile, code)
 
         endDate = input(f"输入 [{mobile}] 截止日期(必须是YYYYMMDD,20230819)，如果不设置截止，请输入9：").strip()
