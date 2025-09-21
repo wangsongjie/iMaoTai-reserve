@@ -48,13 +48,13 @@ def get_location():
 
 if __name__ == '__main__':
 
-    aes_key = privateCrypt.get_aes_key()
+    aes_key = private1Crypt.get_aes_key()
 
     while 1:
         process.init_headers()
         location_select: dict = get_location()
         province = location_select['province']
-        city = location_sel1ect['city']
+        city = location_select['city']
         location: str = location_select['location']
 
         mobile = input("输入手机号[13812341234]:").strip()
